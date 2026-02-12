@@ -10,6 +10,7 @@
 
 This is a fork of [mod-individual-xp](https://github.com/azerothcore/mod-individual-xp). I didn't really remove any features, but I made most of the features only work with GM accounts.  
 It still allows each player to `view` their experience multiplier, but only `GMs` are allowed to `modify` the XP rate.  
+  
 I also added a feature that the XP gain will stop after reaching a certain level. So you could make a player gain additional XP up until a certain level. Great for catching up with friends.  
 since `.xp default`, `.xp disable` and `.xp enable` I also set to GM commands but haven't made it targetable (yet, unsure if I'll ever do though), these commands are basically useless as of now.  
 
