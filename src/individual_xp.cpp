@@ -145,7 +145,7 @@ public:
                 {
                     data->XPRate = 1.0f;
                     ChatHandler(player->GetSession()).PSendSysMessage(
-                        "Your XP rate has been reset to 1x because you reached level %u.",
+                        "Your XP rate has been reset to 1x because you reached level {}.",
                         effectiveMaxLevel
                     );
                 }
@@ -270,7 +270,7 @@ public:
 
         if (!target)
         {
-            handler->PSendSysMessage("Player '%s' not found or is not online.", playerName.c_str());
+            handler->PSendSysMessage("Player '{}' not found or is not online.", playerName);
             handler->SetSentErrorMessage(true);
             return false;
         }
@@ -295,13 +295,13 @@ public:
         if (maxLevel)
         {
             data->MaxLevel = *maxLevel;
-            handler->PSendSysMessage("Set XP rate for %s to %.2fx, resets at level %u.", playerName.c_str(), rate, *maxLevel);
-            ChatHandler(target->GetSession()).PSendSysMessage("A GM has set your XP rate to %.2fx. It will reset to 1x at level %u.", rate, *maxLevel);
+            handler->PSendSysMessage("Set XP rate for {} to {}x, resets at level {}.", playerName, rate, *maxLevel);
+            ChatHandler(target->GetSession()).PSendSysMessage("A GM has set your XP rate to {}x. It will reset to 1x at level {}.", rate, *maxLevel);
         }
         else
         {
-            handler->PSendSysMessage("Set XP rate for %s to %.2fx.", playerName.c_str(), rate);
-            ChatHandler(target->GetSession()).PSendSysMessage("A GM has set your XP rate to %.2fx.", rate);
+            handler->PSendSysMessage("Set XP rate for {} to {}x.", playerName, rate);
+            ChatHandler(target->GetSession()).PSendSysMessage("A GM has set your XP rate to {}x.", rate);
         }
 
         return true;
