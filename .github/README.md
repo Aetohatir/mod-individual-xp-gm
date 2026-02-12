@@ -2,11 +2,13 @@
 
 ## Individual XP Module
 
+- CURRENTLY UNTESTED AND WIP
+
 - Latest build status with azerothcore:
 
 [![Build Status](https://github.com/azerothcore/mod-individual-xp/workflows/core-build/badge.svg?branch=master&event=push)](https://github.com/azerothcore/mod-individual-xp)
 
-This module allows each player to `view`, `enable`, `disable`, and `modify` their experience multiplier without having to modify the values of other players. This functionality can be accessed at any time through the use of commands. It is the player who decides how to play (`slow` or `fast`), rather than the server forcing them to decide for them.
+This module allows each player to `view` and  `disable` their experience multiplier, but only GMs to `enable` and `modify` without having to modify the values of other players. This functionality can be accessed at any time through the use of commands. It is the player who decides how to play (`slow` or `fast`), rather than the server forcing them to decide for them.
 
 # How to install
 
