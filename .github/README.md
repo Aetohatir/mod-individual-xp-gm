@@ -22,8 +22,8 @@ See the commands in the table below.
 | .XP         | All | Shows all available commands                      |
 | .XP View    | All | Displays the current XP rate                      |
 | .XP Set #   | GMs | Changes the XP rate to the value specified        |
-| .XP setplayer <name> <rate> | GMs | Set's the XP gain rate of specified player to specified value |
-| .XP setplayer <name> <rate> <level> | GMs | Set's the XP gain rate of specified player to specified value until specified level is reached. Will then be reset to 1x |
+| .XP setplayer `name` `rate` | GMs | Set's the XP gain rate of specified player to specified value |
+| .XP setplayer `name` `rate` `level` | GMs | Set's the XP gain rate of specified player to specified value until specified level is reached. Will then be reset to 1x |
 | .XP Default | GMs | Returns the XP rate to the default value          |
 | .XP Disable | GMs | Disables all XP gain until user does '.XP Enable' |
 | .XP Enable  | GMs | Enables all XP gain if it was disabled            |
