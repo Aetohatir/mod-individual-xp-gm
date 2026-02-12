@@ -51,7 +51,7 @@ IndividualXp.AnnounceRatesOnLogin = true
 IndividualXp.MaxXPRate = 10
 
 #
-#   DefaultXPRate
+#   IndividualXp.DefaultXPRate
 #
 #   Description: This is the default rate players start with.
 #   Recommendation: It might be a good idea to set the default value to the maximum.
@@ -61,3 +61,19 @@ IndividualXp.MaxXPRate = 10
 #
 
 IndividualXp.DefaultXPRate = 1
+
+#
+#   IndividualXp.MaxLevel
+#
+#   Description: The level at which a player's XP rate is automatically reset to 1x.
+#                This acts as a global default. A per-player level cap can also be set
+#                by a GM using the in-game command: .xp setplayer <name> <rate> <maxlevel>
+#                A per-player value always takes priority over this global setting.
+#   Example:
+#           0  (Disabled - XP rate never resets based on level)
+#           60 (XP rate resets to 1x when the player reaches level 60)
+#
+#   Default: 0
+#
+
+IndividualXp.MaxLevel = 0
